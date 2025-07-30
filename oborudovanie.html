@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продажа геодезического оборудования — ООО "Советник"</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    .hidden { display: none; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <header class="bg-blue-600 text-white py-4">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">ООО "Советник"</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="hover:underline">Главная</a>
+        <a href="geodeziya.html" class="hover:underline">Геодезия</a>
+        <a href="ocenka.html" class="hover:underline">Оценка</a>
+        <a href="bti.html" class="hover:underline">БТИ</a>
+        <a href="nedvizhimost.html" class="hover:underline">Недвижимость</a>
+        <a href="oborudovanie.html" class="underline font-semibold">Оборудование</a>
+        <a href="index.html#contact" class="hover:underline">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold mb-6">Каталог геодезического оборудования</h2>
+
+    <!-- Меню товаров -->
+    <div class="grid md:grid-cols-4 gap-4 mb-10">
+      <button onclick="showProduct(2)" class="bg-gray-100 p-4 rounded hover:bg-blue-100">DJI Matrice 4 Enterprise</button>
+      <button onclick="showProduct(3)" class="bg-gray-100 p-4 rounded hover:bg-blue-100">STEC SDi</button>
+      <button onclick="showProduct(1)" class="bg-gray-100 p-4 rounded hover:bg-blue-100">Товар 3</button>
+      <button onclick="showProduct(4)" class="bg-gray-100 p-4 rounded hover:bg-blue-100">Товар 4</button>
+      <button onclick="showProduct(5)" class="bg-gray-100 p-4 rounded hover:bg-blue-100">Товар 5</button>
+      <button onclick="showProduct(6)" class="bg-gray-100 p-4 rounded hover:bg-blue-100">Товар 6</button>
+      <button onclick="showProduct(7)" class="bg-gray-100 p-4 rounded hover:bg-blue-100">Товар 7</button>
+    </div>
+
+    <!-- Блоки товаров -->
+    <div id="products">
+
+      <!-- Шаблон товара -->
+      <div id="product-1" class="hidden">
+        <h3 class="text-2xl font-bold mb-4">Полное название товара 1</h3>
+        <p class="mb-4">Краткое описание товара 1.</p>
+
+        <!-- Галерея -->
+        <div class="grid md:grid-cols-3 gap-4 mb-4">
+          <img src="Foto/1_1.jpg" alt="Фото 1" class="rounded">
+          <img src="Foto/1_2.jpg" alt="Фото 2" class="rounded">
+          <img src="Foto/1_3.jpg" alt="Фото 3" class="rounded">
+          <img src="Foto/1_4.jpg" alt="Фото 4" class="rounded">
+          <img src="Foto/1_5.jpg" alt="Фото 5" class="rounded">
+          <img src="Foto/1_6.jpg" alt="Фото 6" class="rounded">
+        </div>
+
+        <!-- Кнопки подменю -->
+        <div class="space-x-4 mb-4">
+          <a href="Komplekt/1_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Комплектация</a>
+          <a href="Xarakt/1_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Характеристика</a>
+          <a href="Instr/1_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Инструкция</a>
+          <a href="Prochee/1_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Прочее</a>
+        </div>
+
+        <p class="text-lg font-bold mb-4">Цена: 100 000 ₽</p>
+      </div>
+
+      <!-- Товар 2: DJI Matrice 4 Enterprise -->
+      <div id="product-2" class="hidden">
+        <h3 class="text-2xl font-bold mb-4">DJI Matrice 4 Enterprise</h3>
+        <p class="mb-4">Профессиональный квадрокоптер для аэросъёмки и геодезических работ.</p>
+
+        <!-- Галерея -->
+        <div class="grid md:grid-cols-3 gap-4 mb-4">
+          <img src="Foto/2_1.jpg" alt="Фото 1" class="rounded">
+          <img src="Foto/2_2.jpg" alt="Фото 2" class="rounded">
+          <img src="Foto/2_3.jpg" alt="Фото 3" class="rounded">
+        </div>
+
+        <!-- Кнопки подменю -->
+        <div class="space-x-4 mb-4">
+          <a href="Komplekt/2_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Комплектация</a>
+          <a href="Xarakt/2_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Характеристика</a>
+          <a href="Instr/2_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Инструкция</a>
+          <a href="Prochee/2_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Прочее</a>
+        </div>
+
+        <p class="text-lg font-bold mb-4">Цена: 6000 $</p>
+      </div>
+
+      <!-- Товар 3: STEC SDi -->
+      <div id="product-3" class="hidden">
+        <h3 class="text-2xl font-bold mb-4">STEC SDi</h3>
+        <p class="mb-4">Современный компактный GNSS приёмник с камерой для AR.</p>
+
+        <!-- Галерея -->
+        <div class="grid md:grid-cols-3 gap-4 mb-4">
+          <img src="Foto/3_1.jpg" alt="Фото 1" class="rounded">
+          <img src="Foto/3_2.jpg" alt="Фото 2" class="rounded">
+          <img src="Foto/3_3.jpg" alt="Фото 3" class="rounded">
+        </div>
+
+        <!-- Кнопки подменю -->
+        <div class="space-x-4 mb-4">
+          <a href="Komplekt/3_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Комплектация</a>
+          <a href="Xarakt/3_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Характеристика</a>
+          <a href="Instr/3_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Инструкция</a>
+          <a href="Prochee/3_1.pdf" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Прочее</a>
+        </div>
+
+        <p class="text-lg font-bold mb-4">Цена: 4000 $</p>
+      </div>
+
+      <!-- Шаблон товаров 4-7 (аналогично товару 1) -->
+      <!-- ... -->
+    </div>
+
+  </main>
+
+  <footer class="bg-gray-100 py-4 text-center text-sm text-gray-600 mt-10">
+    &copy; 2003–2025 ООО "Советник". Все права защищены.
+  </footer>
+
+  <script>
+    function showProduct(id) {
+      const products = document.querySelectorAll('#products > div');
+      products.forEach(p => p.classList.add('hidden'));
+      document.getElementById(`product-${id}`).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
